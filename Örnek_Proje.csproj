@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{555A8A23-6382-4F43-8486-0DC29258BE41}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Örnek_Proje</RootNamespace>
+    <AssemblyName>Örnek_Proje</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaSayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa.Designer.cs">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Futbolcu.cs" />
+    <Compile Include="Kiralama.cs" />
+    <Compile Include="Menajer.cs" />
+    <Compile Include="Menajer_Teslim_Alma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menajer_Teslim_Alma.Designer.cs">
+      <DependentUpon>Menajer_Teslim_Alma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Futbolcu_İşlemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Futbolcu_İşlemleri.Designer.cs">
+      <DependentUpon>Futbolcu_İşlemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menajer_İşlemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menajer_İşlemleri.Designer.cs">
+      <DependentUpon>Menajer_İşlemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Futbolcu_Menajer_Kiralama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Futbolcu_Menajer_Kiralama.Designer.cs">
+      <DependentUpon>Futbolcu_Menajer_Kiralama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Futbolcu_Teslim_Alma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Futbolcu_Teslim_Alma.Designer.cs">
+      <DependentUpon>Futbolcu_Teslim_Alma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AnaSayfa.resx">
+      <DependentUpon>AnaSayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Futbolcu_Menajer_Kiralama.resx">
+      <DependentUpon>Futbolcu_Menajer_Kiralama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Futbolcu_Teslim_Alma.resx">
+      <DependentUpon>Futbolcu_Teslim_Alma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Futbolcu_İşlemleri.resx">
+      <DependentUpon>Futbolcu_İşlemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menajer_Teslim_Alma.resx">
+      <DependentUpon>Menajer_Teslim_Alma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menajer_İşlemleri.resx">
+      <DependentUpon>Menajer_İşlemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
